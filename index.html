@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+          background: #151424;
+          color: #fff;
+          z-index: 1;
+          border-bottom: 2px solid #fff;
+        }
+
+     </style>
+     <title>Portfolio</title>
+   </head>
+<body>
+    <!-- >>>>> SIDEBAR START <<<<< -->
+  <div class="sidebar">
+    <!-- {{{ LOGO_CONTENT START }}} -->
+    <div class="logo_content">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+            <!-- <i class="bx bxl-c-plus-plus icon"></i>  
+            <div class="logo_name">CodingLab</div> -->
+        </div>
+            <i class="bx bx-menu" id="btn" ></i>
+    </div>
+    <!-- {{{ LOGO_CONTENT END }}} -->    
+    <!-- {{{ NAVIGATIONS START }}} -->
+    <ul class="nav-list">
+      <li>
+          <i class="bx bx-search" ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-home"></i>
+          <span class="links_name">HOME</span>
+        </a>
+         <span class="tooltip">HOME</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class="bx bx-user" ></i>
+         <span class="links_name">ABOUT</span>
+       </a>
+       <span class="tooltip">ABOUT</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class="bx bxs-briefcase"></i>
+         <span class="links_name">Services</span>
+       </a>
+       <span class="tooltip">Services</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class="bx bx-phone"></i>
+         <span class="links_name">Contact</span>
+       </a>
+       <span class="tooltip">Contact</span>
+     </li>
+    </ul>
+    <!-- {{{ NAVIGATIONS END }}} -->
+    <!-- {{{ Profile START }}} -->
+    <div class="login_form">
+            <div class="login_details">
+              <div class="login_signup">
+                <div class="login"><a href="file:///F:/University%20Notes/5th%20Semestor%20Notes/Web%20Development/Projects/Portfolio%20Design%203/Login.html">Login</a>/<a href="file:///F:/University%20Notes/5th%20Semestor%20Notes/Web%20Development/Projects/Portfolio%20Design%203/signup.html">Sign Up</a></div>
+              </div>
+            </div>
+            <i class="bx bx-log-in-circle" id="login"></i>
+    </div>
+  </div>
+  <!-- {{{ Profile END }}} -->
+  <!-- >>>>> SIDEBAR END <<<<< -->
+  <!-- >>>>> HOME START <<<<< -->
+  <section class="home_section">
+    <div class="header">
+      <div class="text">Home</div>
+      <div class="mode">
+        <!-- <i class="bx bxs-sun" id="sun"></i> -->
+        <span class="change">OFF</span>
+        <!-- <i class="bx bxs-moon" id="moon"></i> -->
+      </div>
+    </div>
+    <div class="home_info">
+      <h3 class="hello">Hello, my name is <span class="name">Muhammad Zain Amjad</span></h3>
+      <h3 class= "my_profession">I' m a <span class="typing">web designer</span></h3>
+      <p>I'm a web designer with extensive experience for over 10 years. My expertise is to create and website design, graphic design, and many more...</p>
+      <a href="#contact" class="btn hire-me">Hire Me</a>
+    </div>
+    <div class="home_img">
+      <img src="./img/profile.jpg" alt="profile">
+    </div>
+    <!-- BLOB CODE -->
+    <!-- <section>
+      <div class="blob">
+        <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+          <g transform="translate(165.06118392944336, 1.1469078063964844)">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(233, 100, 67);"></stop>
+                <stop offset="100%" style="stop-color: rgb(144, 78, 149);"></stop>
+              </linearGradient>
+            </defs>
+            <path fill="url(#gradient)">
+              <animate attributeName="d"  
+                  dur="10000ms" 
+                  repeatCount="indefinite"
+              
+                  values="M434,311Q417,372,367,414.5Q317,457,255.5,439.5Q194,422,149.5,389Q105,356,53,303Q1,250,30.5,181Q60,112,127,94Q194,76,256,59Q318,42,383.5,74Q449,106,450,178Q451,250,434,311Z;
+                          M451,307Q407,364,365,419.5Q323,475,258.5,448Q194,421,144,392Q94,363,63,306.5Q32,250,49,183Q66,116,130,96Q194,76,255,62Q316,48,363.5,90.5Q411,133,453,191.5Q495,250,451,307Z;
+                          M435,312Q421,374,363,396.5Q305,419,243,440.5Q181,462,117,427.5Q53,393,27.5,321.5Q2,250,40.5,188Q79,126,133.5,92Q188,58,251,56Q314,54,380.5,80.5Q447,107,448,178.5Q449,250,435,312Z;
+                          M433.99348,318.54235Q439.11727,387.0847,373.06515,406.06189Q307.01303,425.03909,244.50977,442.51303Q182.00652,459.98697,114.98697,428.50652Q47.96742,397.02606,55.17917,323.51303Q62.39091,250,62.14008,181.45765Q61.88924,112.9153,126.95765,93.00652Q192.02606,73.09773,259.55538,42.9153Q327.0847,12.73288,380.5,64.39576Q433.9153,116.05864,431.3925,183.02932Q428.8697,250,433.99348,318.54235Z;
+                          M432.5,316.5Q433,383,368.5,400Q304,417,248,423.5Q192,430,141.5,397.5Q91,365,61,307.5Q31,250,39.5,176.5Q48,103,118.5,82.5Q189,62,248,68Q307,74,353,108Q399,142,415.5,196Q432,250,432.5,316.5Z;
+                          M428,308Q431,366,387.5,411Q344,456,279.5,476Q215,496,174,440.5Q133,385,79.5,350.5Q26,316,20.5,248.5Q15,181,60.5,132.5Q106,84,165,75.5Q224,67,283.5,56Q343,45,396,83.5Q449,122,437,186Q425,250,428,308Z;
+                          ">
+              </animate>
+            </path>
+          </g>
+        </svg>
+      </div>
+    </section> -->
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  
+  <!-- >>>>> HOME END <<<<< -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script>
+    var typed = new Typed(".typing",{
+    strings:["","Web Deisgner","Web Developer", "Graphic Designer", "Game Developer"],
+    typeSpeed:100,
+    BackSpeed:60,
+    loop:true
+  });
+  $( ".change" ).on("click", function() {
+            if( $( ".home_section" ).hasClass( "dark" )) {
+                $( ".home_section" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( ".home_section" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+
+  </script>
+<script src="./js/typeanimate.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
